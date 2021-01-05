@@ -32,14 +32,14 @@ const RegistrationScreen = ({ navigation }) => {
                         <View style={Styles.textinputregist}>
                             <TextInput placeholder="Email" />
                         </View>
-                        <View style={{ display: 'flex', alignSelf: 'center', flexDirection: 'row', marginTop: 20, width: "90%", borderRadius: 10, borderWidth: 2 }}>
+                        <View style={Styles.inputt}>
                             <TextInput placeholder="Pasword" style={{ alignSelf: 'center', width: '88%' }} />
 
                             <TouchableOpacity style={{ alignSelf: 'center', }}>
                                 <Icon name="eye" size={30} color="black" />
                             </TouchableOpacity>
                         </View>
-                        <View style={{ display: 'flex', alignSelf: 'center', flexDirection: 'row', marginTop: 20, width: "90%", borderRadius: 10, borderWidth: 2 }}>
+                        <View style={Styles.inputt}>
                             <TextInput placeholder="Pasword" style={{ alignSelf: 'center', width: '88%' }} />
 
                             <TouchableOpacity style={{ alignSelf: 'center', }}>

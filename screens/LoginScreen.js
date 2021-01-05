@@ -22,10 +22,10 @@ const LoginScreen = ({ navigation }) => {
                 <Container style={Styles.login}>
                     <Content>
                         <Form>
-                            <View style={{ display: 'flex', alignSelf: 'center', flexDirection: 'row', marginTop: 30, width: "90%", borderRadius: 20, borderWidth: 3 }}>
+                            <View style={Styles.inputt}>
                                 <TextInput placeholder="UserName" style={{ alignSelf: 'center', width: '90%' }} />
                             </View>
-                            <View style={{ display: 'flex', alignSelf: 'center', flexDirection: 'row', marginTop: 30, width: "90%", borderRadius: 20, borderWidth: 3 }}>
+                            <View style={Styles.inputt}>
                                 <TextInput placeholder="Pasword" style={{ alignSelf: 'center', width: '88%' }} />
 
                                 <TouchableOpacity style={{ alignSelf: 'center', }}>
@@ -54,7 +54,7 @@ const LoginScreen = ({ navigation }) => {
                                 onPress={() => {
                                     navigation.navigate('TimeStamp');
                                 }}
-                                style={{ alignItems: 'center', borderRadius: 10, borderWidth: 2, marginTop: 10, alignSelf: 'center' }}>
+                                style={Styles.stampbtn}>
                                 <Text style={Styles.textbtn}>TimeStamp</Text>
                             </TouchableOpacity>
                         </Form>

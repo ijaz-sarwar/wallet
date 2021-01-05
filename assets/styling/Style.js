@@ -45,7 +45,15 @@ const Style = StyleSheet.create({
     textinputregist: {
         width: "90%", height: 50,
         borderWidth: 2, margin: 10, borderRadius: 10
-    }
+    },
+    inputt:
+    {
+        display: 'flex', alignSelf: 'center',
+        flexDirection: 'row', marginTop: 30,
+        width: "90%", borderRadius: 20, borderWidth: 3
+    },
+    stampbtn:
+        { alignItems: 'center', borderRadius: 10, borderWidth: 2, marginTop: 10, alignSelf: 'center' }
 
 })
 export default Style;
