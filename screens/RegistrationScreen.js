@@ -10,6 +10,7 @@ import {
     ScrollView
 } from 'react-native';
 import Styles from '../assets/styling/Style.js'
+import Icon from 'react-native-vector-icons/dist/Entypo';
 const RegistrationScreen = ({ navigation }) => {
     return (
         <View style={Styles.container}>
@@ -31,11 +32,19 @@ const RegistrationScreen = ({ navigation }) => {
                         <View style={Styles.textinputregist}>
                             <TextInput placeholder="Email" />
                         </View>
-                        <View style={Styles.textinputregist}>
-                            <TextInput placeholder="Pasword" />
+                        <View style={{ display: 'flex', alignSelf: 'center', flexDirection: 'row', marginTop: 20, width: "90%", borderRadius: 10, borderWidth: 2 }}>
+                            <TextInput placeholder="Pasword" style={{ alignSelf: 'center', width: '88%' }} />
+
+                            <TouchableOpacity style={{ alignSelf: 'center', }}>
+                                <Icon name="eye" size={30} color="black" />
+                            </TouchableOpacity>
                         </View>
-                        <View style={Styles.textinputregist}>
-                            <TextInput placeholder="ConfirmPasword" />
+                        <View style={{ display: 'flex', alignSelf: 'center', flexDirection: 'row', marginTop: 20, width: "90%", borderRadius: 10, borderWidth: 2 }}>
+                            <TextInput placeholder="Pasword" style={{ alignSelf: 'center', width: '88%' }} />
+
+                            <TouchableOpacity style={{ alignSelf: 'center', }}>
+                                <Icon name="eye" size={30} color="black" />
+                            </TouchableOpacity>
                         </View>
                         <TouchableOpacity style={Styles.register}
                             onPress={() => {

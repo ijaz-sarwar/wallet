@@ -29,15 +29,15 @@ const Style = StyleSheet.create({
     },
     register: {
         borderColor: "black", borderWidth: 2, width: 150,
-        height: 50, borderRadius: 10, alignItems: "center", justifyContent: 'center'
+        height: 50, borderRadius: 10, alignItems: "center", justifyContent: 'center', marginTop: 10
     },
     loginbtn: {
         borderColor: "black", borderWidth: 2,
         width: 80, height: 50, borderRadius: 10,
-        alignItems: 'center', justifyContent: 'center'
+        alignItems: 'center', justifyContent: 'center', marginTop: 10
     },
     textbtn: {
-        fontSize: 20
+        fontSize: 20,
     },
     label: {
         color: 'black'

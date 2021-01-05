@@ -9,8 +9,9 @@ import {
     TextInput,
 } from 'react-native';
 
-import { Container, Header, Content, Form, Item, Input, Label } from 'native-base';
-import Styles from '../assets/styling/Style.js'
+import { Container, Header, Content, Form, Item, Label } from 'native-base';
+import Styles from '../assets/styling/Style.js';
+import Icon from 'react-native-vector-icons/dist/Entypo';
 const LoginScreen = ({ navigation }) => {
     return (
         <View style={Styles.container}>
@@ -21,14 +22,17 @@ const LoginScreen = ({ navigation }) => {
                 <Container style={Styles.login}>
                     <Content>
                         <Form>
-                            <Item floatingLabel>
-                                <Label style={Styles.label}>Username</Label>
-                                <Input />
-                            </Item>
-                            <Item floatingLabel last>
-                                <Label style={Styles.label}>Password</Label>
-                                <Input />
-                            </Item>
+                            <View style={{ display: 'flex', alignSelf: 'center', flexDirection: 'row', marginTop: 30, width: "90%", borderRadius: 20, borderWidth: 3 }}>
+                                <TextInput placeholder="UserName" style={{ alignSelf: 'center', width: '90%' }} />
+                            </View>
+                            <View style={{ display: 'flex', alignSelf: 'center', flexDirection: 'row', marginTop: 30, width: "90%", borderRadius: 20, borderWidth: 3 }}>
+                                <TextInput placeholder="Pasword" style={{ alignSelf: 'center', width: '88%' }} />
+
+                                <TouchableOpacity style={{ alignSelf: 'center', }}>
+                                    <Icon name="eye" size={30} color="black" />
+                                </TouchableOpacity>
+                            </View>
+
                             <View style={Styles.button}>
                                 <TouchableOpacity style={Styles.register}
                                     onPress={() => {
@@ -44,8 +48,15 @@ const LoginScreen = ({ navigation }) => {
                                     style={Styles.loginbtn}>
                                     <Text style={Styles.textbtn}>Login</Text>
                                 </TouchableOpacity>
-                            </View>
 
+                            </View>
+                            <TouchableOpacity
+                                onPress={() => {
+                                    navigation.navigate('TimeStamp');
+                                }}
+                                style={{ alignItems: 'center', borderRadius: 10, borderWidth: 2, marginTop: 10, alignSelf: 'center' }}>
+                                <Text style={Styles.textbtn}>TimeStamp</Text>
+                            </TouchableOpacity>
                         </Form>
                     </Content>
                 </Container>
